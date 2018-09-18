@@ -3,13 +3,22 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: lavender;
+  height: 100px;
   padding: 20px;
   color: white;
 }

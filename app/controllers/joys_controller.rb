@@ -5,7 +5,7 @@ class JoysController < ApplicationController
   # GET /joys.json
   def index
     @joys = Joy.all
-    render json: @joy
+    render json: @joys
   end
 
   # GET /joys/1
