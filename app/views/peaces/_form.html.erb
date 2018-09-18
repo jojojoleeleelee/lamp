@@ -1,0 +1,32 @@
+<%= form_with(model: peace, local: true) do |form| %>
+  <% if peace.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(peace.errors.count, "error") %> prohibited this peace from being saved:</h2>
+
+      <ul>
+      <% peace.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :word %>
+    <%= form.text_area :word %>
+  </div>
+
+  <div class="field">
+    <%= form.label :book %>
+    <%= form.text_field :book %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chapter %>
+    <%= form.number_field :chapter %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

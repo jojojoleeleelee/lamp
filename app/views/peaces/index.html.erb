@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Peaces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Book</th>
+      <th>Chapter</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @peaces.each do |peace| %>
+      <tr>
+        <td><%= peace.word %></td>
+        <td><%= peace.book %></td>
+        <td><%= peace.chapter %></td>
+        <td><%= link_to 'Show', peace %></td>
+        <td><%= link_to 'Edit', edit_peace_path(peace) %></td>
+        <td><%= link_to 'Destroy', peace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Peace', new_peace_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @lofe.word %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @lofe.book %>
+</p>
+
+<p>
+  <strong>Chapter:</strong>
+  <%= @lofe.chapter %>
+</p>
+
+<%= link_to 'Edit', edit_lofe_path(@lofe) %> |
+<%= link_to 'Back', loves_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @peace.word %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @peace.book %>
+</p>
+
+<p>
+  <strong>Chapter:</strong>
+  <%= @peace.chapter %>
+</p>
+
+<%= link_to 'Edit', edit_peace_path(@peace) %> |
+<%= link_to 'Back', peaces_path %>

@@ -1,0 +1,2 @@
+class Peace < ApplicationRecord
+end

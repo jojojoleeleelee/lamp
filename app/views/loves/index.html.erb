@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Loves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Book</th>
+      <th>Chapter</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loves.each do |lofe| %>
+      <tr>
+        <td><%= lofe.word %></td>
+        <td><%= lofe.book %></td>
+        <td><%= lofe.chapter %></td>
+        <td><%= link_to 'Show', lofe %></td>
+        <td><%= link_to 'Edit', edit_lofe_path(lofe) %></td>
+        <td><%= link_to 'Destroy', lofe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lofe', new_lofe_path %>

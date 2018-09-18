@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @joy.word %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @joy.book %>
+</p>
+
+<p>
+  <strong>Chapter:</strong>
+  <%= @joy.chapter %>
+</p>
+
+<%= link_to 'Edit', edit_joy_path(@joy) %> |
+<%= link_to 'Back', joys_path %>
